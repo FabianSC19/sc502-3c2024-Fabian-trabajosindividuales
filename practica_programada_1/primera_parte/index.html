@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Formulario de registro</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="page-header">
+      <p>Práctica Programada 1</p>
+    </header>
+    <main>
+      <section class="registration-card" aria-labelledby="title">
+        <h1 id="title">Formulario de registro</h1>
+        <p id="description">Completa tus datos para crear tu cuenta.</p>
+
+        <form id="survey-form" action="#" method="post">
+          <fieldset>
+            <label for="first-name">Nombre <input id="first-name" name="first-name" type="text" required /></label>
+            <label for="last-name">Apellido <input id="last-name" name="last-name" type="text" required /></label>
+            <label for="email">Correo electrónico <input id="email" name="email" type="email" required /></label>
+            <label for="new-password">Crea una contraseña <input id="new-password" name="new-password" type="password" pattern="[a-z0-5]{8,}" required /></label>
+          </fieldset>
+
+          <fieldset>
+            <legend>Tipo de cuenta</legend>
+            <label class="inline"><input name="account-type" type="radio" value="personal" checked /> Personal</label>
+            <label class="inline"><input name="account-type" type="radio" value="business" /> Empresa</label>
+          </fieldset>
+
+          <fieldset>
+            <label for="profile-picture">Sube una foto de perfil <input id="profile-picture" name="file" type="file" /></label>
+            <label for="age">Edad (años) <input id="age" name="age" type="number" min="13" max="120" /></label>
+            <label for="referrer">¿Cómo nos conociste?
+              <select id="referrer" name="referrer">
+                <option value="">Selecciona una opción</option>
+                <option value="social">Redes sociales</option>
+                <option value="friend">Recomendación</option>
+                <option value="search">Buscador web</option>
+              </select>
+            </label>
+            <label for="bio">Cuéntanos un poco sobre ti
+              <textarea id="bio" name="bio" rows="4" placeholder="Me interesa aprender..."></textarea>
+            </label>
+          </fieldset>
+
+          <label class="terms"><input type="checkbox" required /> Acepto los <a href="#">términos y condiciones</a>.</label>
+          <button type="submit">Enviar</button>
+        </form>
+      </section>
+    </main>
+    <footer class="page-footer">
+      <p>Formulario elaborado con HTML5 y CSS3.</p>
+    </footer>
+  </body>
+</html>

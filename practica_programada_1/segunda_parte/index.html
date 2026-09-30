@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Clínica Vida | Dra. Sofía Morales</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <a class="brand" href="#inicio">Clínica <span>Vida</span></a>
+      <nav aria-label="Navegación principal">
+        <ul class="nav-links">
+          <li><a href="#inicio">Inicio</a></li>
+          <li><a href="#servicios">Servicios</a></li>
+          <li><a href="#perfil">Perfil del Doctor</a></li>
+          <li><a href="#contacto">Contacto</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main id="inicio">
+      <section class="profile" id="perfil" aria-labelledby="doctor-name">
+        <div class="doctor-photo" aria-hidden="true">SM</div>
+        <div class="profile-content">
+          <p class="eyebrow">Especialista disponible</p>
+          <h1 class="doctor-name" id="doctor-name">Dra. Sofía Morales</h1>
+          <p class="specialty">Medicina familiar y preventiva</p>
+          <p id="doctor-description">La Dra. Morales cuenta con más de 12 años de experiencia en atención integral de pacientes. Se formó en la Universidad de Costa Rica y acompaña a cada persona con escucha, claridad y un plan de cuidado personalizado.</p>
+          <a class="appointment-button" href="#contacto">Agendar una cita</a>
+        </div>
+      </section>
+
+      <section class="services" id="servicios" aria-labelledby="services-title">
+        <h2 id="services-title">Atención pensada para ti</h2>
+        <p>Consultas preventivas, seguimiento de condiciones crónicas y orientación para el bienestar de toda la familia.</p>
+        <ul class="service-list">
+          <li>Consulta médica general</li>
+          <li>Control preventivo anual</li>
+          <li>Seguimiento de tratamientos</li>
+        </ul>
+      </section>
+
+      <section class="reviews" aria-labelledby="reviews-title">
+        <div class="section-heading">
+          <p class="eyebrow">Experiencias de pacientes</p>
+          <h2 id="reviews-title">Recomendaciones</h2>
+        </div>
+        <div class="review-list">
+          <article class="review-card">
+            <p class="quote">“Me explicó cada paso de mi tratamiento y atendió todas mis dudas con mucha paciencia.”</p>
+            <h3>Ana Rodríguez</h3>
+            <time datetime="2026-05-18">18 de mayo de 2026</time>
+          </article>
+          <article class="review-card">
+            <p class="quote">“La consulta fue puntual, cercana y muy profesional. Me sentí realmente escuchado.”</p>
+            <h3>Carlos Jiménez</h3>
+            <time datetime="2026-06-03">3 de junio de 2026</time>
+          </article>
+          <article class="review-card">
+            <p class="quote">“Excelente atención para mi familia. Las recomendaciones fueron claras y fáciles de seguir.”</p>
+            <h3>Valeria Sánchez</h3>
+            <time datetime="2026-06-12">12 de junio de 2026</time>
+          </article>
+        </div>
+      </section>
+
+      <aside class="contact-note" aria-labelledby="contact-title">
+        <h2 id="contact-title">¿Necesitas orientación?</h2>
+        <p>El equipo de Clínica Vida puede ayudarte a elegir el tipo de consulta que necesitas.</p>
+      </aside>
+    </main>
+
+    <footer id="contacto">
+      <p><strong>Clínica Vida</strong> · San José, Costa Rica · (506) 2200-0000</p>
+    </footer>
+  </body>
+</html>
